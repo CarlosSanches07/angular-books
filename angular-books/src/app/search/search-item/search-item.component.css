@@ -1,0 +1,42 @@
+	.avatar{
+  	background-size: cover;
+  	height: 100px;
+  	width: 100px;
+	}
+
+	.item {
+ 		width: 366px; 
+		height: 427px;
+	 	margin: 40px 20px; 
+	}
+
+	.description {
+		margin-top: 15px !important;
+		max-height: 200px;
+		min-height: 200px;
+		overflow: auto;
+	}
+	
+	.item-header{
+		max-height: 75px;
+		overflow: hidden;
+	}
+
+	.title {
+		max-width: 266px;
+		overflow: hidden;
+		display: flex;
+		justify-content: space-around;
+	}
+
+	.title-text {
+
+	}
+
+
+	@media only screen and (max-width: 480px) {
+		.item {
+			width: 280px;
+			height: 420px;
+		}
+	}

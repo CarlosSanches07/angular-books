@@ -1,0 +1,11 @@
+.scroll {
+	position: fixed;
+	bottom: 40px;
+	right: 40px;
+}
+@media only screen and (max-width : 480px) {
+	.scroll {
+		bottom: 20px;
+		right: 20px;
+	}
+}

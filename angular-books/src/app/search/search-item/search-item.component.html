@@ -1,0 +1,28 @@
+<div fxLayout="row wrap" fxLayoutAlign="center">
+  <div *ngFor="let book of search.list">
+    <mat-card class="item">
+      <mat-card-header class="item-header">
+        <mat-card-title class="title">
+          <h3 class="title-text">{{book.title}}</h3>
+        </mat-card-title>
+        <mat-card-subtitle class="title">
+          <h3 class="title-text" >{{book.authors}}</h3>
+        </mat-card-subtitle>
+      </mat-card-header>
+      
+      <mat-card-content>
+        <div>
+          <img class="avatar" [src]="book.img">
+        </div>
+        <div class="description">
+          {{book.description}}
+        </div>
+        
+        <div #preview class="preview">
+          <h4><a [href]="(book.prev)" [target]="(_blank)">Preview</a>
+          </h4>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>
